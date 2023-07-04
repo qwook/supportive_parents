@@ -5,6 +5,9 @@ import React, {
   useRef,
 } from "react";
 import * as faceLandmarksDetection from "@tensorflow-models/face-landmarks-detection";
+import * as tfjsWasm from "@tensorflow/tfjs-backend-wasm";
+
+tfjsWasm.setWasmPaths("tfjs-backend-wasm");
 
 export type DetectorProps = {
   onDetectorReady?: () => void;

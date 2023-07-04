@@ -101,7 +101,14 @@ const Webcam = forwardRef<WebcamHandle, WebcamProps>((props, ref) => {
           videoEle.current.videoWidth,
           videoEle.current.videoHeight
         );
-        await onPostRenderRef.current(canvasEle.current, canvasContext.current);
+        try {
+          await onPostRenderRef.current(
+            canvasEle.current,
+            canvasContext.current
+          );
+        } catch (e) {
+          console.error(e);
+        }
       });
       animationLoop.current.start();
     })().catch(console.error);

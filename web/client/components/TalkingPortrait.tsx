@@ -86,7 +86,7 @@ const TalkingPortrait = ({
       onDetectorStart ? onDetectorStart() : null
 
       /* This preps the detector for the new image, since it uses motion. */
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 20; i++) {
         await detector.current.detect(image);
         await new Promise((resolve) => requestAnimationFrame(resolve));
       }
