@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

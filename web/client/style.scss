@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  color: white;
+  background: black;
+  font-family: "Libre+Franklin", "Arial", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  // overflow: hidden;
+}
+
+html {
+  width: 100%;
+}
+
+.scrapbook-canvas {
+  position: absolute;
+  bottom: 10%;
+  left: 0px;
+  width: 100%;
+  // max-width: 100%;
+  // max-height: 100%;
+  display: block;
+  background: #ccc;
+  color: black;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
