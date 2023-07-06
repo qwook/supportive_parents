@@ -435,7 +435,7 @@ function Root() {
             new THREE.Vector2(...leftEyeMean).distanceTo(
               new THREE.Vector2(startX - width * 0.1, startY - width * 0.05)
             ) <
-            width * 0.02
+            width * 0.03
           ) {
             invertLeftEye = true;
           }
@@ -455,7 +455,7 @@ function Root() {
             new THREE.Vector2(...rightEyeMean).distanceTo(
               new THREE.Vector2(startX + width * 0.1, startY - width * 0.05)
             ) <
-            width * 0.02
+            width * 0.03
           ) {
             invertRightEye = true;
           }
@@ -569,7 +569,8 @@ function Root() {
         <TextToSpeech
           ref={dadTextToSpeech}
           onWordSpoken={onDadWordSpoken}
-          voice="Eddy (English (US))"
+          // voice="Eddy (English (US))"
+          voice="Nathan (Enhanced)"
         />
       </div>
       <div
@@ -624,7 +625,8 @@ function Root() {
         <TextToSpeech
           ref={momTextToSpeech}
           onWordSpoken={onMomWordSpoken}
-          voice="Shelley (English (US))"
+          // voice="Shelley (English (US))"
+          voice="Allison (Enhanced)"
         />
         {/* <div onClick={onGenerate}>Generate</div> */}
       </div>
